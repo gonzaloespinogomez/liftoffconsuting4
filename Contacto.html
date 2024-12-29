@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Contacto.css">
+    <meta charset="UTF-8">
+    <meta name="LiftOffWebsite" autor= GonEspino content="width=device-width, initial-scale=1.0">
+    <title>LiftOffConsulting Home</title>
+</head>
+<body>
+    <header>
+        <div class="logo_">
+            <p class="logo">LIFT OFF CONSULTING</p>
+        </div>
+        <nav class="navigation">
+            <ul class="navlist">
+                <li class="navItem">
+                    <a class="navlink" href="Servicios.html">SERVICIOS</a>
+                </li>
+                <li class="navItem">
+                    <a class="navlink" href="Nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="navItemLast">
+                    <a class="navlinklast" href="Contact.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form method="POST" action="Contact.php" id="contact-form">
+        <h2>Contact us</h2>
+        <p><label>First Name:</label> <input name="name" type="text" /></p>
+        <p><label>Email Address:</label> <input style="cursor: pointer;" name="email" type="text" /></p>
+        <p><label>Message:</label>  <textarea name="message"></textarea> </p>
+        <p><input type="submit" value="Send" /></p>
+    </form>
+    <footer>
+        <div class="footer_image">
+            <img src="LiftOffConsulting.png" class="footer_image_"></img>
+        </div>
+        <div class="footer_">
+            <p class="footertext">Copyright © 2025. Gonzalo Espino. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</html>

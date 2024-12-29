@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --color_principal: white;
+    --color_secundario: #6b6b6b;
+    --scolor-terciario: #bababa;
+}
+
+html,body,p {
+    background-color: var(--color_principal);
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    margin-bottom: 10px;
+    max-width: 1500px;
+    padding:0;
+    font-family:"Roboto",serif ;
+    font-size: 62,5%;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (width<=1599px){
+        max-width: 1300px;
+    }
+}
+
+header {
+    background-color: white;
+    margin-left:0;
+    padding:0;
+    max-width: 1600px;
+    align-items: center;
+    margin-top:0;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+   
+    @media screen and (width<=1599px){
+        display: flex;
+        justify-content: space-between;
+    }
+    @media screen and (width<1000px){
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 90%;
+    }
+}
+
+.content {
+    margin-top:200px;
+    margin-bottom:100px;
+    @media screen and (width<=1600px){
+        margin-top:50px;
+        margin-bottom:100px;
+    }
+    @media screen and (width<1000px){
+    }
+}
+
+.Servicios {
+    margin:0;
+    margin-left: 20px;
+    margin-top:50px;
+    padding-right:0;
+    padding-left:0;
+    max-width: 1500px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    column-gap: 0px;
+    row-gap: 20px;
+   
+    @media screen and (width<=1599px){
+        display:grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space-between;
+    }
+
+    @media screen and (width<1000px){
+        display:grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.logo{
+    font-size:2rem;
+    min-width: 20ch;
+    margin-top:20px;
+    margin-left:0px;
+    padding-left:20px;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+    color:black;
+    @media screen and (width<1000px){
+        text-align:center;
+        font-size:3rem;
+    }
+}
+
+.navlist{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+
+.navlink{
+    font-size:2rem;
+    font-weight: 400;
+    color: black;
+    margin: 40px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    position: relative;
+    font-weight: 400;
+    &:hover{
+        color: #bababa
+    }
+@media screen and (width<1600px){
+        font-size:2rem;
+    }
+@media screen and (width<1000px){
+        font-size:2rem;
+}
+}
+
+.navlinklast{
+    font-size:2rem;
+    font-weight: 400;
+    color: black;
+    margin-left: 40px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: right;
+    &:hover{
+        color: #bababa
+    }
+@media screen and (width<=1600px){
+        font-size:2rem;
+        margin: 40px;
+    }
+@media screen and (width<1000px){
+        font-size:2rem;
+        margin: 40px;
+}
+}
+
+.navItem{
+    margin-top:20px;
+}
+
+.navItemLast{
+    margin-top:20px;
+    margin-right:0px;
+    @media screen and (width<=1599px){
+        margin:0px;
+        margin-top:20px;
+
+    }
+    @media screen and (width<1000px){
+        
+        margin:0px;
+        margin-top:20px;
+    }
+}
+
+.Hijos{
+    list-style-type: none;
+    font-size:1rem;
+    min-width:10ch;
+    padding-right: 10px;
+    padding-left: 20px;
+    border-radius: 20px;
+    &:hover{
+        background-image: linear-gradient(to right,rgb(238, 255, 0),rgba(160, 255, 50, 0.6),rgba(46, 161, 255, 0.6));
+    }
+    @media screen and (width<=1599px){
+        font-size:1.5rem;
+        min-width:10ch;
+
+    }
+    @media screen and (width<1000px){
+        font-size:2rem;
+    }
+}
+
+.Padres{
+    list-style-type: none;
+    font-weight: 500;
+    font-size:1.2rem;
+    min-width:20ch;
+    padding-right: 20px;
+    padding-left: 20px;
+    @media screen and (width<=1599px){
+        font-size:1.5rem;
+        min-width:10ch;
+    }
+    @media screen and (width<1000px){
+        font-size:2rem;
+        min-width:15ch;
+
+    }
+}
+
+
+.LinkServicios{
+    text-decoration: none;
+    color:#6b6b6b;
+}
+
+
+
+.serviciosfinanciacion{
+    padding:0;
+    margin:0;
+}
+
+.gestionidi{
+    padding:0;
+    margin:0;
+}
+
+.techtransfer{
+    padding:0;
+    margin:0;
+}
+
+.consultoriatecnologica{
+    padding:0;
+    margin:0;
+}
+
+.negocio{
+    padding:0;
+    margin:0;
+}
+
+footer{
+    margin-top: 400px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (width<=1599px){
+        margin-top: 50px;
+    }
+    @media screen and (width<1000px){
+        margin-top: 200px;
+    }
+
+}
+
+.footer_image_{
+    max-width:70px;
+    max-height:70px;
+}
+
+.footer_{
+    padding-top: 5px;
+    font-size:15px;
+    color: #bababa;
+}
